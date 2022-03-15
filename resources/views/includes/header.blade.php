@@ -17,7 +17,9 @@ $links = config('header_links');
     <div class="header-bar">
 
         <div>
-            <img src="{{ asset('images/dc-logo.png') }}" />
+            <a href="{{ route('home') }}">
+                <img src="{{ asset('images/dc-logo.png') }}" />
+            </a>
         </div>
         <div class="list-cont">
             <ul>
