@@ -10,12 +10,8 @@
 </head>
 
 <body>
-
     @include('includes.header')
-    <main>
-        <div class="jumbodron"></div>
-    </main>
-
+    @yield('content')
     @include('includes.footer')
 </body>
 
