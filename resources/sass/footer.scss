@@ -1,0 +1,33 @@
+.big-col {
+    width: 50%;
+    display: flex;
+  }
+  
+  .col {
+    width: calc(100% / 3);
+  }
+  
+  footer {
+    position: relative;
+    padding-top: 90px;
+    padding-bottom: 65px;
+    background-image: url("../images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2{
+        color: white;
+    }
+    ul {
+      margin-top: 20px;
+    
+      a {
+        color: rgb(180, 161, 161);
+        font-size: 13px;
+      }
+    }
+    
+    #logo-dc {
+      height: 420px;
+    }
+  }
+  
