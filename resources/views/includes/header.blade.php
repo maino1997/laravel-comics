@@ -12,7 +12,8 @@ $links = config('header_links');
     <div class="list-cont">
         <ul>
             @foreach ($links as $link)
-                <li><a href="{{ route($link['link']) }}">{{ $link['text'] }}</a></li>
+                <li><a class="{{ request()->routeIs($link['link']) ? 'active' : '' }}"
+                        href="{{ route($link['link']) }}">{{ $link['text'] }}</a></li>
             @endforeach
         </ul>
     </div>

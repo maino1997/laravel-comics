@@ -34,6 +34,11 @@ header .list-cont ul li a:hover {
   background-image: url("../images/jumbotron.jpg");
 }
 
+.active {
+  color: #0c7cec;
+  border-bottom: 3px solid #0c7cec;
+}
+
 * {
   margin: 0;
   padding: 0;
