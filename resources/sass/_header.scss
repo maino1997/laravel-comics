@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .list-cont {
+      height: 100%;
+      ul {
+        display: flex;
+        height: 127px;
+        li {
+          list-style: none;
+          display: flex;
+          height: 100%;
+          margin: 0 10px;
+          a {
+            height: 100%;
+            line-height: 127px;
+            font-weight: 600;
+            &:hover {
+              color: $my-blue;
+              border-bottom: 3px solid $my-blue;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  img {
+    padding: 10px 0;
+  }
