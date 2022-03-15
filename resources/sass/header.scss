@@ -1,7 +1,21 @@
 header {
+  .header-top{
+    background-color: #0c7cec;
+    .header-top-content{
+      display: flex;
+      justify-content: flex-end;
+      span{
+        color: white;
+        font-size: 12px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .header-bar{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    }
     img {
       padding: 10px 0;
     }
@@ -29,7 +43,7 @@ header {
     }
   }
   
- 
+  
 
   .jumbodron {
     height: 300px;

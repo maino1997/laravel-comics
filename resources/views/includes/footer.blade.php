@@ -12,6 +12,12 @@
                     <li><a href="#">Videos</a></li>
                     <li><a href="#">News</a></li>
                 </ul>
+
+                <h2>SHOP</h2>
+                <ul>
+                    <li><a href="#">Shop DC</a></li>
+                    <li><a href="#">Shop DC Collectabilities</a></li>
+                </ul>
             </div>
             <div class="col">
                 <h2>DC</h2>
