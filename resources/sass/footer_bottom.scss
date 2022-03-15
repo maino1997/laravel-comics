@@ -1,0 +1,36 @@
+.footer-bottom {
+    height: 80px;
+    background-color: rgb(34, 32, 32);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .left {
+      a {
+        border: 2px solid #0c7cec;
+        color: white;
+        padding: 15px 5px 15px 5px;
+      }
+    }
+    
+    .right {
+      h3 {
+        color: $my-blue;
+      }
+      ul {
+        display: flex;
+        li {
+          margin: 10px;
+        }
+      }
+    }
+  }
+  
+  
