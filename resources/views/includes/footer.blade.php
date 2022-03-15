@@ -1,47 +1,45 @@
+@php
+
+$first_list = config('footer_links_first');
+$second_list = config('footer_links_second');
+$third_list = config('footer_links_third');
+$fourth_list = config('footer_links_fourth');
+
+@endphp
+
+
 <footer>
     <div class="container">
         <div class="big-col">
             <div class="col">
                 <h2>DC COMICS</h2>
                 <ul>
-                    <li><a href="#">Characters</a></li>
-                    <li><a href="#">Comics</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">TV</a></li>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">News</a></li>
+                    @foreach ($first_list as $link)
+                        <li><a href="{{ $link['route_name'] }}">{{ $link['text'] }}</a></li>
+                    @endforeach
                 </ul>
 
                 <h2>SHOP</h2>
                 <ul>
-                    <li><a href="#">Shop DC</a></li>
-                    <li><a href="#">Shop DC Collectabilities</a></li>
+                    @foreach ($second_list as $link)
+                        <li><a href="{{ $link['route_name'] }}">{{ $link['text'] }}</a></li>
+                    @endforeach
                 </ul>
             </div>
             <div class="col">
                 <h2>DC</h2>
                 <ul>
-                    <li><a href="#">Terms Of Use</a></li>
-                    <li><a href="#">Privacy Policy (New)</a></li>
-                    <li><a href="#">Ad Choices</a></li>
-                    <li><a href="#">Advertising</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Subscriptions</a></li>
-                    <li><a href="#">CPSC Certificates</a></li>
-                    <li><a href="#">Ratings</a></li>
-                    <li><a href="#">Shop Help</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    @foreach ($third_list as $link)
+                        <li><a href="{{ $link['route_name'] }}">{{ $link['text'] }}</a></li>
+                    @endforeach
                 </ul>
             </div>
             <div class="col">
                 <h2>SITES</h2>
                 <ul>
-                    <li><a href="#">DC</a></li>
-                    <li><a href="#">DC UNIVERSE INFINITE</a></li>
-                    <li><a href="#">DC Kids</a></li>
-                    <li><a href="#">DC Shop</a></li>
-                    <li><a href="#">MAD Magazine</a></li>
+                    @foreach ($fourth_list as $link)
+                        <li><a href="{{ $link['route_name'] }}">{{ $link['text'] }}</a></li>
+                    @endforeach
                 </ul>
             </div>
         </div>
