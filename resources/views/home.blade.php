@@ -1,3 +1,10 @@
+@php
+
+$icons = config('bluebar_icon');
+
+@endphp
+
+
 @extends('layout.main')
 
 @section('content')
@@ -15,6 +22,16 @@
                 @endforeach
             </div>
         </div>
-        <button>LOAD MORE</button>
+        <button id="lower-bottom">LOAD MORE</button>
+        <div class="blue-bar">
+            <ul>
+                @foreach ($icons as $icon)
+                    <li>
+                        <img src="{{ $icon['url'] }}" alt="thumb" />
+                        <span>{{ $icon['text'] }}</span>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
     </main>
 @endsection

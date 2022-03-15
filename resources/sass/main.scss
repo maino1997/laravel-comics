@@ -11,14 +11,18 @@ main {
       background-color: $my-blue;
       border: 1px solid transparent;
       color: white;
-      margin-bottom: 20px;
+      margin-bottom: 150px;
     }
     
     #top-button {
       font-size: 1.2rem;
       position: absolute;
-      top: -30px;
+      top: 270px;
       left: 80px;
+    }
+
+    #lowebutton{
+      margin-bottom: 100px;
     }
    
   }
