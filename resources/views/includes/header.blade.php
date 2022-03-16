@@ -6,6 +6,7 @@ $links = config('header_links');
 
 
 <header>
+
     <div class="header-top">
         <div class="container-no-flex">
             <div class="header-top-content">
@@ -14,20 +15,25 @@ $links = config('header_links');
             </div>
         </div>
     </div>
-    <div class="header-bar">
-
-        <div>
-            <a href="{{ route('home') }}">
-                <img src="{{ asset('images/dc-logo.png') }}" />
-            </a>
-        </div>
-        <div class="list-cont">
-            <ul>
-                @foreach ($links as $link)
-                    <li><a class="{{ request()->routeIs($link['link']) ? 'active' : '' }}"
-                            href="{{ route($link['link']) }}">{{ $link['text'] }}</a></li>
-                @endforeach
-            </ul>
+    <div class="container-no-flex">
+        <div class="header-bar">
+            <div>
+                <a href="{{ route('home') }}">
+                    <img src="{{ asset('images/dc-logo.png') }}" />
+                </a>
+            </div>
+            <div class="list-cont">
+                <ul>
+                    @foreach ($links as $link)
+                        <li><a class="{{ request()->routeIs($link['link']) ? 'active' : '' }}"
+                                href="{{ route($link['link']) }}">{{ $link['text'] }}</a></li>
+                    @endforeach
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
         </div>
     </div>
     <div class="jumbodron"></div>

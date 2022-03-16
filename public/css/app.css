@@ -15,6 +15,16 @@ header .header-bar {
   justify-content: space-around;
   align-items: center;
 }
+header .header-bar input {
+  border: 0;
+  border-bottom: 3px solid #0c7cec;
+  font-size: 18px;
+  color: black;
+}
+header .header-bar .fa-magnifying-glass {
+  position: relative;
+  right: 25px;
+}
 header img {
   padding: 10px 0;
 }
