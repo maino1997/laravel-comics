@@ -10,6 +10,11 @@ $icons = config('bluebar_icon');
 
 @section('content')
     <section id="comic">
+        <div class="strict-container">
+            <figure class="card-class">
+                <img src="{{ $comic['thumb'] }}" alt="thumb" class="immagine" />
+            </figure>
+        </div>
         <div class="separator-bar"></div>
         <div class="strict-container">
             <div class="col-8">

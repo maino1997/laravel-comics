@@ -9,6 +9,18 @@
 #comic{
 font-family: 'Raleway', sans-serif; 
 position: relative;
+.card-class {
+    width: calc(100% / 7 - 10px);
+    padding: 50px 10px;
+    position: absolute;
+    top: -25%;
+        .immagine {
+            border: 2px solid white;
+                       width: 100%;
+           height: 220px;
+         }
+  }
+  
 .blue-bar{
     background-color: #f3efef;
             border-top: 1px solid #cec8c8;      
