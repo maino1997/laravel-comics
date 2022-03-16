@@ -26,8 +26,9 @@ header .header-bar input:focus-visible {
   border-bottom: 3px solid #0c7cec;
 }
 header .header-bar .fa-magnifying-glass {
-  position: relative;
-  right: 25px;
+  position: absolute;
+  right: 215px;
+  top: 72px;
 }
 header img {
   padding: 10px 0;
@@ -73,14 +74,14 @@ header .list-cont ul li a:hover {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   width: 100%;
   display: flex;
   margin: auto;
 }
 
 .container-no-flex {
-  max-width: 1200px;
+  max-width: 1100px;
   width: 100%;
   margin: auto;
 }
@@ -106,6 +107,7 @@ a {
 .row {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .big-col {
@@ -195,7 +197,7 @@ main #lowebutton {
 }
 
 .card-class {
-  width: calc(16.6666666667% - 10px);
+  width: 16.6666666667%;
   padding: 50px 10px;
 }
 .card-class figcaption {

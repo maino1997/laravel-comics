@@ -6,14 +6,14 @@
   }
   
   .container {
-    max-width: 1200px;
+    max-width: 1100px;
     width: 100%;
     display: flex;
     margin: auto;
   }
   
   .container-no-flex {
-    max-width: 1200px;
+    max-width: 1100px;
     width: 100%;
     margin: auto;
   }
@@ -39,4 +39,5 @@
   .row{
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
   }
