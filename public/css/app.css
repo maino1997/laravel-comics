@@ -173,7 +173,7 @@ main button {
 main #top-button {
   font-size: 1.2rem;
   position: absolute;
-  top: 270px;
+  top: -30px;
   left: 80px;
 }
 main #lowebutton {
@@ -232,6 +232,20 @@ main #lowebutton {
 #comic {
   font-family: "Raleway", sans-serif;
   position: relative;
+}
+#comic .fa-angle-left {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  font-size: 3rem;
+  color: gray;
+}
+#comic .fa-angle-right {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  font-size: 3rem;
+  color: gray;
 }
 #comic .card-class {
   width: calc(14.2857142857% - 10px);

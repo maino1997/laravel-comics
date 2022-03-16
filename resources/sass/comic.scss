@@ -9,6 +9,21 @@
 #comic{
 font-family: 'Raleway', sans-serif; 
 position: relative;
+.fa-angle-left{
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    font-size: 3rem;
+    color: gray;
+}
+
+.fa-angle-right{
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    font-size: 3rem;
+    color: gray;
+}
 .card-class {
     width: calc(100% / 7 - 10px);
     padding: 50px 10px;

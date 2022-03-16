@@ -10,6 +10,16 @@ $icons = config('bluebar_icon');
 
 @section('content')
     <section id="comic">
+        @isset($prev)
+            <a href="{{ route('comic', ['id' => $prev]) }}">
+                <i class="fa-solid fa-angle-left"></i>
+            </a>
+        @endisset
+        @isset($next)
+            <a href="{{ route('comic', ['id' => $next]) }}">
+                <i class="fa-solid fa-angle-right"></i>
+            </a>
+        @endisset
         <div class="strict-container">
             <figure class="card-class">
                 <img src="{{ $comic['thumb'] }}" alt="thumb" class="immagine" />

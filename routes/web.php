@@ -62,7 +62,21 @@ Route::get('/shop.php', function () {
 Route::get('/comic/{id}', function ($id) {
 
     $comics = config('comics');
+
+    if (!is_numeric($id) || $id < 0 || $id >= count($comics)) {
+        abort('404');
+    }
     $comic = $comics[$id];
 
-    return view('comic', ['comic' => $comic]);
+    // $prev = $id > 0 ? $id - 1 : count($comics) - 1;
+    // $next = $id == count($comics) - 1 ? 0 : $id + 1;
+
+    $prev = ($id == 0) ? null : $id - 1;
+    $next = $id == count($comics) - 1 ? null : $id + 1;
+
+    return view('comic', [
+        'comic' => $comic,
+        'prev' => $prev,
+        'next' => $next,
+    ]);
 })->name('comic');
