@@ -30,4 +30,5 @@ $links = config('header_links');
             </ul>
         </div>
     </div>
+    <div class="jumbodron"></div>
 </header>

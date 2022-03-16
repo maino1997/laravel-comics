@@ -9,7 +9,6 @@ $icons = config('bluebar_icon');
 
 @section('content')
     <main>
-        <div class="jumbodron"></div>
         <button id="top-button">CURRENT SERIES</button>
 
         <div class="container-no-flex">
