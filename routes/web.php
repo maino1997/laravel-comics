@@ -58,3 +58,11 @@ Route::get('/news.php', function () {
 Route::get('/shop.php', function () {
     return view('shop');
 })->name('shop');
+
+Route::get('/comic/{id}', function ($id) {
+
+    $comics = config('comics');
+    $comic = $comics[$id];
+
+    return view('comic', ['comic' => $comic]);
+})->name('comic');

@@ -13,9 +13,11 @@ $icons = config('bluebar_icon');
 
         <div class="container-no-flex">
             <div class="row">
-                @foreach ($comics as $comic)
+                @foreach ($comics as $index => $comic)
                     <figure class="card-class">
-                        <img src="{{ $comic['thumb'] }}" alt="thumb" />
+                        <a href="{{ route('comic', ['id' => $index]) }}">
+                            <img src="{{ $comic['thumb'] }}" alt="thumb" />
+                        </a>
                         <figcaption>{{ $comic['title'] }}</figcaption>
                     </figure>
                 @endforeach
