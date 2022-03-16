@@ -1,3 +1,11 @@
+.strict-container{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+
 #comic{
 font-family: 'Raleway', sans-serif; ;
     .col-8{
@@ -44,7 +52,42 @@ font-family: 'Raleway', sans-serif; ;
         margin-bottom: 50px;
         color: #817982;
     }
+
     
+    #bottom-comic{
+        background-color: #f3efef;
+        .col-5{
+            width: 50%;
+            padding: 0 30px;
+            margin-bottom: 150px;
+        }
+        .title{
+            width: 30%;
+        }
+        .art{
+            width: 70%;
+        }
+        
+        h3{
+            color: #1A4F6A;
+            font-size: 20px;
+            border-bottom: 1px solid darkgrey;
+            padding: 20px 0;
+        }
+        .info-box{
+            border-bottom: 1px solid darkgrey;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            .artists{
+                color: $my-blue;
+            }
+            .serie{
+                text-transform: uppercase;
+                color: $my-blue;
+            }
+        }
+    }
 }
 .separator-bar{
     background-color: $my-blue;

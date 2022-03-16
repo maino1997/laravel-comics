@@ -220,6 +220,13 @@ main #lowebutton {
   font-size: 0.8rem;
 }
 
+.strict-container {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
 #comic {
   font-family: "Raleway", sans-serif;
 }
@@ -265,6 +272,39 @@ main #lowebutton {
 #comic p {
   margin-bottom: 50px;
   color: #817982;
+}
+#comic #bottom-comic {
+  background-color: #f3efef;
+}
+#comic #bottom-comic .col-5 {
+  width: 50%;
+  padding: 0 30px;
+  margin-bottom: 150px;
+}
+#comic #bottom-comic .title {
+  width: 30%;
+}
+#comic #bottom-comic .art {
+  width: 70%;
+}
+#comic #bottom-comic h3 {
+  color: #1A4F6A;
+  font-size: 20px;
+  border-bottom: 1px solid darkgrey;
+  padding: 20px 0;
+}
+#comic #bottom-comic .info-box {
+  border-bottom: 1px solid darkgrey;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+#comic #bottom-comic .info-box .artists {
+  color: #0c7cec;
+}
+#comic #bottom-comic .info-box .serie {
+  text-transform: uppercase;
+  color: #0c7cec;
 }
 
 .separator-bar {

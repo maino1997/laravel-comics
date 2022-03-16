@@ -3,7 +3,7 @@
 @section('content')
     <section id="comic">
         <div class="separator-bar"></div>
-        <div class="container">
+        <div class="strict-container">
             <div class="col-8">
                 <h2>{{ $comic['title'] }}</h2>
                 <div class="green-bar">
@@ -18,6 +18,50 @@
             <div class="col-4">
                 <img src="../images/adv.jpg" alt="adv">
             </div>
+        </div>
+        <section id="bottom-comic">
+            <div class="strict-container">
+                <div class="col-5">
+                    <h3>Talent</h3>
+                    <div class="info-box">
+                        <div class="title">Art By</div>
+                        <div class="art">
+                            @foreach ($comic['artists'] as $artist)
+                                <span class="artists">{{ $artist }}</span>
+                            @endforeach
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="title">Written By</div>
+                        <div class="art">
+                            @foreach ($comic['writers'] as $writer)
+                                <span class="artists">{{ $writer }}</span>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <h3>Spec</h3>
+                    <div class="info-box">
+                        <div class="title">Series:</div>
+                        <div class="art serie">
+                            {{ $comic['series'] }}
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="title">Us Price:</div>
+                        <div class="art ">
+                            {{ $comic['price'] }}
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="title">On Sale Date:</div>
+                        <div class="art ">
+                            {{ $comic['sale_date'] }}
+                        </div>
+                    </div>
+                </div>
+        </section>
         </div>
     </section>
 @endsection
