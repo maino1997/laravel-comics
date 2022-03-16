@@ -1,3 +1,11 @@
+@php
+
+$icons = config('bluebar_icon');
+
+@endphp
+
+
+
 @extends('layout.main')
 
 @section('content')
@@ -11,6 +19,7 @@
                     <div class="right">
                         <span class="light">AVAILABLE</span>
                         <span class="border">Check Availability</span>
+                        <i class="fa-solid fa-caret-down"></i>
                     </div>
                 </div>
                 <p>{{ $comic['description'] }}</p>
@@ -62,6 +71,17 @@
                     </div>
                 </div>
         </section>
+        <div class="blue-bar">
+            <div class="strict-container">
+                <ul>
+                    @foreach ($icons as $icon)
+                        <li>
+                            <span>{{ $icon['text'] }}</span>
+                            <img src="{{ $icon['url'] }}" alt="thumb" />
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
         </div>
     </section>
 @endsection

@@ -7,7 +7,40 @@
 
 
 #comic{
-font-family: 'Raleway', sans-serif; ;
+font-family: 'Raleway', sans-serif; 
+position: relative;
+.blue-bar{
+    background-color: #f3efef;
+            border-top: 1px solid #cec8c8;      
+            ul{
+                margin: 0;
+                margin: auto;
+                li{
+                    border-bottom: 1px solid #cec8c8;
+                    border-right: 1px solid #cec8c8;
+                    height: 100px;
+                    width: 25%;
+                    margin: 0;
+                    padding: 20px;
+                    &:first-child{
+                        border-left: 1px solid #cec8c8;
+                    }
+                    img{
+                        transform: scale(0.5);
+                        background-color: #cec8c8;
+                        position: relative;
+                        top: 20px;
+                        left: 10px;
+                    }
+                    span{
+                        position: relative;
+                        bottom: 20px;
+                        right: 10px;
+                        color: #cec8c8;
+                    }
+                }
+            }  
+}
     .col-8{
         width: 60%;
         padding-right: 20px;
@@ -37,6 +70,8 @@ font-family: 'Raleway', sans-serif; ;
         .right{
             display: flex;
         justify-content: space-between;
+        align-items: center;
+        position: relative;
         }
         span{
             color: white;
@@ -92,4 +127,13 @@ font-family: 'Raleway', sans-serif; ;
 .separator-bar{
     background-color: $my-blue;
     height: 80px;
+}
+
+.fa-caret-down{
+    color: white;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-15%);
 }

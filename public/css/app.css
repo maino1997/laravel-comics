@@ -195,6 +195,7 @@ main #lowebutton {
 .blue-bar {
   position: absolute;
   left: 0;
+  bottom: 0;
   right: 0;
   bottom: 0;
   height: 100px;
@@ -229,6 +230,39 @@ main #lowebutton {
 
 #comic {
   font-family: "Raleway", sans-serif;
+  position: relative;
+}
+#comic .blue-bar {
+  background-color: #f3efef;
+  border-top: 1px solid #cec8c8;
+}
+#comic .blue-bar ul {
+  margin: 0;
+  margin: auto;
+}
+#comic .blue-bar ul li {
+  border-bottom: 1px solid #cec8c8;
+  border-right: 1px solid #cec8c8;
+  height: 100px;
+  width: 25%;
+  margin: 0;
+  padding: 20px;
+}
+#comic .blue-bar ul li:first-child {
+  border-left: 1px solid #cec8c8;
+}
+#comic .blue-bar ul li img {
+  transform: scale(0.5);
+  background-color: #cec8c8;
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+#comic .blue-bar ul li span {
+  position: relative;
+  bottom: 20px;
+  right: 10px;
+  color: #cec8c8;
 }
 #comic .col-8 {
   width: 60%;
@@ -259,6 +293,8 @@ main #lowebutton {
 #comic .green-bar .right {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 #comic .green-bar span {
   color: white;
@@ -310,4 +346,13 @@ main #lowebutton {
 .separator-bar {
   background-color: #0c7cec;
   height: 80px;
+}
+
+.fa-caret-down {
+  color: white;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-15%);
 }
