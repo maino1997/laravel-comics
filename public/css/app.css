@@ -21,6 +21,10 @@ header .header-bar input {
   font-size: 18px;
   color: black;
 }
+header .header-bar input:focus-visible {
+  border: 0;
+  border-bottom: 3px solid #0c7cec;
+}
 header .header-bar .fa-magnifying-glass {
   position: relative;
   right: 25px;

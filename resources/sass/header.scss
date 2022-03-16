@@ -20,6 +20,10 @@ header {
       border-bottom: 3px solid $my-blue;
       font-size: 18px;
       color: black;
+      &:focus-visible{
+        border: 0;
+        border-bottom: 3px solid $my-blue;
+        }
     }
     .fa-magnifying-glass{
       position: relative;
