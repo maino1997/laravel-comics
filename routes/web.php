@@ -59,6 +59,8 @@ Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
 
+
+// comic/{$id} dovrebbe essere per convenzione al plurale, quindi comics/{$id}
 Route::get('/comic/{id}', function ($id) {
 
     $comics = config('comics');
@@ -80,3 +82,4 @@ Route::get('/comic/{id}', function ($id) {
         'next' => $next,
     ]);
 })->name('comic');
+// Il name dovrebbe essere comics.show, quindi anche il nome del file blade
